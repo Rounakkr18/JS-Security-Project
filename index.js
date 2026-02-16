@@ -38,5 +38,9 @@ app.get('/addition/:a/:b',function(req,res){
     var c=a+b;
     res.send(`Add of ${a} and ${b} is: ${c}`);
 }); 
+app.get('/date',function(req,res){                    // date -> endpoint
+    var date=new Date().toLocaleDateString(); 
+    res.send(`Date is: ${date}`);
+});
     
 app.listen(9000,()=>console.log("API Started Listening..."))
