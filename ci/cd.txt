@@ -1,0 +1,3 @@
+compile -> testing -> code coverage -> built(by jenkins) -> executable file ->
+
+developer -> pre production -> production
